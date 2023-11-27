@@ -1,0 +1,40 @@
+<template>
+    <lightning-card title="Cadastrar voos">
+        <div class="slds-p-horizontal_small">
+            <lightning-record-edit-form object-api-name="Voo__c" onsuccess={handleSuccess}>
+                <lightning-messages> </lightning-messages>
+
+                <lightning-input-field
+                    field-name="Aeroporto_Partida__c"
+                    onchange={changeAeroportoPartida}>
+                </lightning-input-field>
+
+                <lightning-input-field
+                    field-name="Aeroporto_Chegada__c"
+                    onchange={changeAeroportoChegada}>>
+                </lightning-input-field>
+
+                <lightning-input-field
+                    field-name="Distancia__c" value={distancia} disabled="true">
+                </lightning-input-field>
+                
+                <lightning-button
+                    class="slds-m-top_small"
+                    type="submit"
+                    label="Cadastrar"
+                    disabled={disableBotao}
+                >
+                </lightning-button>
+            </lightning-record-edit-form>            
+        </div>
+    </lightning-card>
+
+
+    <lightning-card title="Voo cadastrado" if:true={flag}>
+        <lightning-datatable
+                key-field={idTabela}
+                data={ultimoVoo}
+                columns={columns}>
+        </lightning-datatable>      
+    </lightning-card>
+</template>
