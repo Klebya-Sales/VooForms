@@ -32,7 +32,7 @@ export default class VooForms extends LightningElement {
                 }
             )
             .then(data => {
-                this.distancia = data/1000;
+                this.distancia = (data/1000).toFixed(2);
                 this.disableBotao = false;                
             })
         }

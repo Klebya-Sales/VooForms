@@ -1,0 +1,74 @@
+/* .info{
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+.saida{
+    padding: 10px;
+}
+.dadosCadastro{
+    padding: 17px;
+}
+table{
+    border: 1px solid #ccc;
+} */
+
+.div-pai{
+    padding: 20px;
+    height: 200px;
+}
+
+.div-principal {
+    width: 100%;
+}
+.div-primaria {
+    background-color: #ddd;
+    float: left;
+    width: 50%;
+}
+.div-secundaria {
+    float: right;
+    background-color: #eee;
+    width: 50%;
+}
+
+.div-interna {
+    padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .div-primaria {
+        float: none;
+        width: 100%;
+    }
+
+    .div-secundaria {
+        float: none;
+        width: 100%;
+    }
+
+    .div-pai{
+        height: 400px;
+    }
+}
+
+.cinza {
+    background-color: #e5e5e5;
+    padding: 10px;
+}
+
+.branco {
+    padding: 10px;
+}
+
+.div-main {
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 0.5em;
+    padding: 25px;
+    box-shadow: 0 0 8px 1px #ddd;
+}
+
+.tabela {
+    border: 1px solid #ccc;
+}
